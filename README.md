@@ -1,15 +1,14 @@
-# Stop node
+# Setup RPC Drosera Node
+Stop node
 sudo systemctl stop drosera
 
-#Edit Trap configuration
+Edit Trap configuration
 ```bash
 cd my-drosera-trap
 nano drosera.toml
 ```
 
-(Change RPC Holskey) & Save
-
-#Configure SystemD service file
+Configure SystemD service file
 ```bash
 sudo tee /etc/systemd/system/drosera.service > /dev/null <<EOF
 [Unit]
@@ -34,8 +33,9 @@ ExecStart=$(which drosera-operator) node --db-file-path $HOME/.drosera.db --netw
 WantedBy=multi-user.target
 EOF
 ```
+(Change RPC Holskey) & SAVE
 
-# reload systemd
+reload systemd
 ```bash
 sudo systemctl daemon-reload
 ```
@@ -43,12 +43,12 @@ sudo systemctl daemon-reload
 sudo systemctl enable drosera
 ```
 
-# start systemd
+start systemd
 ```bash
 sudo systemctl start drosera
 ```
 
-#Check Node Health
+Check Node Health
 ```bash
 journalctl -u drosera.service -f
 ```
