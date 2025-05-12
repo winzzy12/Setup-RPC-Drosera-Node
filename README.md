@@ -54,6 +54,10 @@ start systemd
 ```bash
 sudo systemctl start drosera
 ```
+restart systemd
+```bash
+sudo systemctl restart drosera
+```
 
 Check Node Health
 ```bash
