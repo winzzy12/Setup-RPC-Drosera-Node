@@ -3,8 +3,11 @@ RPC
 
 
 # Setup RPC Drosera Node
+
+```bash
 Stop node
 sudo systemctl stop drosera
+```
 
 Edit Trap configuration
 ```bash
