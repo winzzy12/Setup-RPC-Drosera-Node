@@ -45,6 +45,15 @@ EOF
 ```
 (Change RPC Holskey) & SAVE
 
+Start service:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable drosera
+sudo systemctl start drosera
+journalctl -u drosera.service -f
+```
+
+============================
 reload systemd
 ```bash
 sudo systemctl daemon-reload
