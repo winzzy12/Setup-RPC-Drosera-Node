@@ -53,18 +53,6 @@ sudo systemctl start drosera
 journalctl -u drosera.service -f
 ```
 
-reload systemd
-```bash
-sudo systemctl daemon-reload
-```
-```bash
-sudo systemctl enable drosera
-```
-
-start systemd
-```bash
-sudo systemctl start drosera
-```
 restart systemd
 ```bash
 sudo systemctl restart drosera
