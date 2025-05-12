@@ -14,8 +14,11 @@ Edit Trap configuration
 cd my-drosera-trap
 nano drosera.toml
 ```
-
-Configure SystemD service file
+Edit Service
+```bash
+sudo nano /etc/systemd/system/drosera.service
+```
+Paste content:
 ```bash
 sudo tee /etc/systemd/system/drosera.service > /dev/null <<EOF
 [Unit]
