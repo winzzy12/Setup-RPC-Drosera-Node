@@ -5,8 +5,8 @@ RPC
 # Setup RPC Drosera Node
 
 ```bash
-Stop node
 sudo systemctl stop drosera
+sudo systemctl disable drosera
 ```
 
 Edit Trap configuration
